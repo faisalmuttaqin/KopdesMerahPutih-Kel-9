@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #ce2029; /* Merah Brand */
+}
+
+/* Custom Neumorphic Styles */
+.neumorphic-elevated {
+  box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.95), 6px 6px 14px rgba(163, 177, 198, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-inset {
+  box-shadow: inset 4px 4px 8px rgba(163, 177, 198, 0.22), inset -4px -4px 8px rgba(255, 255, 255, 0.95);
+  transition: all 0.15s ease-in-out;
+}
+
+/* Red-White Soft Shadows */
+.neumorphic-elevated-red {
+  box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px #D1B8B8;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-inset-red {
+  box-shadow: inset 4px 4px 8px #D1B8B8, inset -4px -4px 8px #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+
+/* Shadow theme for Login Base #E0E5EC */
+.neumorphic-flat-gray {
+  background: #E0E5EC;
+  box-shadow: 9px 9px 16px #A3B1C6, -9px -9px 16px #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-inset-gray {
+  background: #E0E5EC;
+  box-shadow: inset 6px 6px 12px #A3B1C6, inset -6px -6px 12px #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+
+.neumorphic-button-gray {
+  background: #E0E5EC;
+  box-shadow: 6px 6px 12px #A3B1C6, -6px -6px 12px #FFFFFF;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-button-gray:active {
+  box-shadow: inset 4px 4px 8px #A3B1C6, inset -4px -4px 8px #FFFFFF;
+  transform: scale(0.98);
+}
+
+.neumorphic-button-primary-gray {
+  background: #DC2626;
+  box-shadow: 6px 6px 12px #A3B1C6, -6px -6px 12px #FFFFFF;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-button-primary-gray:active {
+  background: #B91C1C;
+  box-shadow: inset 4px 4px 8px #991B1B, inset -4px -4px 8px #EF4444;
+  transform: scale(0.98);
+}
+
+/* Custom material icon settings */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.material-icons-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide standard scrollbars cleanly */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

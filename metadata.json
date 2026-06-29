@@ -1,0 +1,6 @@
+{
+  "name": "Koperasi Desa Merah Putih",
+  "description": "Sistem Manajemen Portal Koperasi Desa Merah Putih untuk Admin dan Anggota dengan visual Neumorphic yang modern dan interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
