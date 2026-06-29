@@ -4,7 +4,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/KopdesMerahPutih-Kel-9/',
+  base: process.env.VERCEL ? '/' : '/KopdesMerahPutih-Kel-9/',
 
   plugins: [
     react(),
@@ -18,10 +18,7 @@ export default defineConfig({
   },
 
   server: {
-    // HMR disabled in AI Studio via DISABLE_HMR env var
     hmr: process.env.DISABLE_HMR !== 'true',
-
-    // Disable file watching when HMR is off
     watch: process.env.DISABLE_HMR === 'true' ? null : {},
   },
 });
